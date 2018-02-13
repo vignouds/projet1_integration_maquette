@@ -1,30 +1,67 @@
 <!DOCTYPE html>
 <html>
-<head id="acceuil">
+<head>
 	<meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="style.css">
 	<title>Webagency : l'agence de tous vos projets !</title>
 </head>
 <body>
-	<header>
-		<ul>
-			<li><a href="#acceuil">Acceuil</a></li>
-			<li><a href="#services">Services</a></li>
-			<li><a href="#portfolio">Portfolio</a></li>
-			<li><a href="#contact">Contact</a></li>
-		</ul>
-		<p>Webagency : l'agence de tous vos projets !</p>
-		<p>Vous avez un projet ? La WebAgency vous aide à le réaliser !</p>
-		<p>Plus d'infos</p>
+	<header id="acceuil">
+		<img src="images/logo.png" alt="Logo WebAgency">
+		<nav>
+			<ul>
+				<li><a href="#slider">Acceuil</a></li>
+				<li><a href="#services">Services</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
 	</header>
-	<div id="services">
-		Nos services
-	</div>
-	<div id="portfolio">
-		Nos projets
-	</div>
-	<div id="contact">
-		Contact info
+	<div id="bloc_page">
+		<div id="slider">
+			<p>Webagency : l'agence de tous vos projets !</p>
+			<p>Vous avez un projet ? La WebAgency vous aide à le réaliser !</p>
+			<p>Plus d'infos</p>
+			<img src="images/slider/bg1.jpg" alt="Image slider 1">
+		</div>
+		<div id="services">
+			<h2>Nos services</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urgent tamen et nihil remittunt. Confecta res esset. Praeterea sublata cognitione et scientia tollitur omnis ratio et vitae degendae et rerum gerendarum.</p>
+			<img src="images/main-feature.png" id="mainFeature">
+			<h3>UX design</h3>
+			<p>Quorum sine causa fieri nihil putandum est. Videamus igitur sententias eorum, tum ad verba redeamus. Bonum incolumis acies: misera caecitas. Dat enim intervalla et relaxat. Ita fit cum gravior, tum etiam splendidior oratio. Tu autem negas fortem esse quemquam posse, qui dolorem malum putet. </p>
+			<h3>UI design</h3>
+			<p>Sin laboramus, quis est, qui alienae modum statuat industriae? Nec enim, dum metuit, iustus est, et certe, si metuere destiterit, non erit; Age nunc isti doceant, vel tu potius quis enim ista melius? </p>
+			<h3>SEO</h3>
+			<p>Nunc omni virtuti vitium contrario nomine opponitur. Non est ista, inquam, Piso, magna dissensio.</p>
+		</div>
+		<div id="portfolio">
+			<h2>Nos projets</h2>
+			<p>At enim sequor utilitatem. Quodsi ipsam honestatem undique pertectam atque absolutam. Esse enim, nisi eris, non potes. Sed tu istuc dixti bene Latine, parum plane</p>
+			<img src="images/portfolio/01.jpg">
+			<img src="images/portfolio/02.jpg">
+			<img src="images/portfolio/03.jpg">
+			<img src="images/portfolio/04.jpg">
+			<img src="images/portfolio/05.jpg">
+			<img src="images/portfolio/06.jpg">
+			<img src="images/portfolio/07.jpg">
+			<img src="images/portfolio/08.jpg">
+		</div>
+		<div id="contact">
+			<div id="contactForm">
+				Contact info
+				<p>WebAgency SAS<br>
+				25 Rue d'Hauteville 75010 Paris<br>
+				Tel : 01 02 03 04 05</p>
+				<form method="post" action="contact.php"><br>
+					<input type="text" name="pseudo" placeholder="Name"><br>
+					<input type="text" name="mail" placeholder="Email"><br>
+					<input type="text" name="subject" placeholder="Subject"><br>
+					<textarea name="message" placeholder="Message"></textarea><br>
+					<input type="submit" value="Send Message">
+				</form>
+			</div>
+		</div>
 	</div>
 </body>
 </html>

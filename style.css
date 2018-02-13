@@ -1,0 +1,51 @@
+h2
+{
+	text-align: center;
+}
+
+h2 + p
+{
+	text-align: center;
+}
+
+
+header
+{
+	/*position: fixed;
+	top: 0;*/
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+nav ul
+{
+	display: flex;
+	list-style-type: none;
+}
+
+nav li
+{
+	margin-right: 15px;
+}
+
+nav a
+{
+	color: black;
+	text-decoration: none;
+}
+
+nav a:hover
+{
+	border-top: 3px solid blue;
+}
+
+#bloc_page
+{
+
+}
+
+#mainFeature
+{
+	float: left;
+}
