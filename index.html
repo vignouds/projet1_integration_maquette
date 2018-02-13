@@ -21,8 +21,8 @@
 		<div id="slider">
 			<p>Webagency : l'agence de tous vos projets !</p>
 			<p>Vous avez un projet ? La WebAgency vous aide à le réaliser !</p>
-			<p>Plus d'infos</p>
-			<img src="images/slider/bg1.jpg" alt="Image slider 1">
+			<button id="infoBtn">Plus d'infos</button>
+			<img src="images/slider/bg1.jpg" alt="Image slider 1" class="slider">
 		</div>
 		<div id="services">
 			<h2>Nos services</h2>
@@ -38,19 +38,19 @@
 		<div id="portfolio">
 			<h2>Nos projets</h2>
 			<p>At enim sequor utilitatem. Quodsi ipsam honestatem undique pertectam atque absolutam. Esse enim, nisi eris, non potes. Sed tu istuc dixti bene Latine, parum plane</p>
-			<img src="images/portfolio/01.jpg">
-			<img src="images/portfolio/02.jpg">
-			<img src="images/portfolio/03.jpg">
-			<img src="images/portfolio/04.jpg">
-			<img src="images/portfolio/05.jpg">
-			<img src="images/portfolio/06.jpg">
-			<img src="images/portfolio/07.jpg">
-			<img src="images/portfolio/08.jpg">
+			<img src="images/portfolio/01.jpg" class="portfolio">
+			<img src="images/portfolio/02.jpg" class="portfolio">
+			<img src="images/portfolio/03.jpg" class="portfolio">
+			<img src="images/portfolio/04.jpg" class="portfolio">
+			<img src="images/portfolio/05.jpg" class="portfolio">
+			<img src="images/portfolio/06.jpg" class="portfolio">
+			<img src="images/portfolio/07.jpg" class="portfolio">
+			<img src="images/portfolio/08.jpg" class="portfolio">
 		</div>
 		<div id="contact">
 			<div id="contactForm">
-				Contact info
-				<p>WebAgency SAS<br>
+				<h3 id="contactTitle">Contact info</h3>
+				<p><strong>WebAgency SAS</strong><br>
 				25 Rue d'Hauteville 75010 Paris<br>
 				Tel : 01 02 03 04 05</p>
 				<form method="post" action="contact.php"><br>
@@ -58,7 +58,7 @@
 					<input type="text" name="mail" placeholder="Email"><br>
 					<input type="text" name="subject" placeholder="Subject"><br>
 					<textarea name="message" placeholder="Message"></textarea><br>
-					<input type="submit" value="Send Message">
+					<input type="submit" value="Send Message" id="sendBtn">
 				</form>
 			</div>
 		</div>

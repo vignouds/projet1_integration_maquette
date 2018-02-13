@@ -1,18 +1,30 @@
+/*Style général*/
 h2
 {
 	text-align: center;
+	text-transform: uppercase;
 }
 
 h2 + p
 {
 	text-align: center;
+	margin-right: 200px;
+	margin-left: 200px;
 }
 
+#bloc_page
+{
+	width: 900px;
+	margin: auto;
+}
+/*Header et navigation*/
 
 header
 {
 	/*position: fixed;
 	top: 0;*/
+	width: 900px;
+	margin: auto;
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-end;
@@ -40,12 +52,83 @@ nav a:hover
 	border-top: 3px solid blue;
 }
 
-#bloc_page
-{
-
-}
+/* Acceuil */
 
 #mainFeature
 {
 	float: left;
+}
+
+.slider
+{
+	width: 900px;
+	color: white;
+}
+
+#infoBtn
+{
+	width: auto;
+	padding: 6px 6px 6px 6px;
+	font-style: bold;
+	color: white;
+	background-color: rgba(78 177 213); /*couleur du point dans le logo webagency*/
+}
+
+/* Portfolio */
+
+.portfolio
+{
+	width: 200px;
+	margin: 10px 10px 10px 10px;
+}
+
+/* Contact */
+
+#contact
+{
+	background-color: grey; /*test*/
+	height: 600px; /*test*/
+}
+
+#contactForm
+{
+	position: relative;
+	top: 30px;
+	left: 500px;
+	background-color: white;
+	opacity: 0.6;
+	width: 250px;
+	padding: 2px 10px 10px 10px;
+}
+
+#contactTitle
+{
+	text-transform: capitalize;
+	font-style: bold;
+	font-size: 1.3em;
+}
+
+form
+{
+	opacity: 1;
+}
+
+input, textarea
+{
+	margin-bottom: 10px;
+	width: 230px;
+}
+
+textarea
+{
+	height: 120px;
+}
+
+#sendBtn
+{
+	width: auto;
+	padding: 6px 6px 6px 6px;
+	font-style: bold;
+	color: white;
+	background-color: rgba(78 177 213); /*couleur du point dans le logo webagency*/
 }
