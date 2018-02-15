@@ -1,4 +1,16 @@
+@font-face 
+{
+    font-family: 'robotoRegular';
+    src: url('fonts/Roboto-Regular.ttf') format('truetype');
+}
+
 /*Style général*/
+
+body
+{
+	font-family: 'robotoRegular', Comic Sans MS, Verdana, Arial, sans-serif;
+}
+
 h2
 {
 	text-align: center;
@@ -16,13 +28,13 @@ h2 + p
 {
 	width: 900px;
 	margin: auto;
+	margin-top: 100px;
 }
+
 /*Header et navigation*/
 
 header
 {
-	/*position: fixed;
-	top: 0;*/
 	width: 900px;
 	margin: auto;
 	display: flex;
@@ -49,7 +61,7 @@ nav a
 
 nav a:hover
 {
-	border-top: 3px solid blue;
+	border-top: 3px solid rgba(78 177 213);
 }
 
 /* Acceuil */
