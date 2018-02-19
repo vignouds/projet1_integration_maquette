@@ -5,7 +5,6 @@
 }
 
 /*Style général*/
-
 body
 {
 	font-family: 'robotoRegular', Comic Sans MS, Verdana, Arial, sans-serif;
@@ -24,20 +23,23 @@ h2 + p
 	margin-left: 200px;
 }
 
-#bloc_page
+section
 {
-	width: 900px;
-	margin: auto;
+	margin-top: 60px;
 }
 
 /*Header et navigation*/
-
 nav
 {
-	width: 900px;
-	margin: auto;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	width: 100%;
+	background-color: white;
+	padding-bottom: 10px;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: flex-end;
 }
 
@@ -64,20 +66,24 @@ nav a:hover
 }
 
 /* Acceuil */
-
-#mainFeature
+#slider
 {
-	float: left;
+	position: relative;
+	color: white;
 }
 
-.slider
+#sliderText
 {
-	width: 900px;
-	color: white;
+	position: absolute;
+	top: 30px;
+	left: 30px;
 }
 
 #infoBtn
 {
+	position: absolute;
+	top: 150px;
+	left: 30px;
 	width: auto;
 	padding: 6px 6px 6px 6px;
 	font-style: bold;
@@ -85,7 +91,17 @@ nav a:hover
 	background-color: rgba(78 177 213); /*couleur du point dans le logo webagency*/
 }
 
+.slider
+{
+	width: 100%;
+}
+
 /* Portfolio */
+#servicesContent
+{
+	display: flex;
+	align-items: center;
+}
 
 .portfolio
 {
@@ -94,7 +110,6 @@ nav a:hover
 }
 
 /* Contact */
-
 #contact
 {
 	background-image: url('images/map.jpg'); /*test*/
