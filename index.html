@@ -2,12 +2,13 @@
 <html>
 <head>
 	<meta charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" type="text/css" href="./css/fontawesome-all.css">
 	<title>Webagency : l'agence de tous vos projets !</title>
 </head>
 <body>
-	<nav id="acceuil">
-		<img src="images/logo.png" alt="Logo WebAgency">
+	<nav>
+		<img src="./images/logo.png" alt="Logo WebAgency">
 			<ul>
 				<li><a href="#sliderAncre">Acceuil</a></li>
 				<li><a href="#servicesAncre">Services</a></li>
@@ -15,29 +16,34 @@
 				<li><a href="#contactAncre">Contact</a></li>
 			</ul>
 	</nav>
-	<section id="slider">
+	<header id="slider">
 		<div id="sliderAncre" class="ancre"></div>
 		<div id="sliderText">
 			<h1><span>Webagency</span> : l'agence de tous vos projets !</h1>
 			<p>Vous avez un projet ? La WebAgency vous aide à le réaliser !</p>
 		<button id="infoBtn">Plus d'infos</button>	
 		</div>
-				<img src="images/slider/bg1.jpg" alt="Image slider 1" class="slider">
-	</section>
+				<i class="fas fa-chevron-left"></i>
+				<img src="./images/slider/bg1.jpg" alt="Image slider 1" class="slider">
+				<i class="fas fa-chevron-right"></i>
+	</header>
 	<section id="services">
 		<div id="servicesAncre" class="ancre"></div>
 		<h2>Nos services</h2>
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urgent tamen et nihil remittunt. Confecta res esset. Praeterea sublata cognitione et scientia tollitur omnis ratio et vitae degendae et rerum gerendarum.</p>
 		<div id="servicesContent">
 			<div>
-				<img src="images/main-feature.png">
+				<img src="./images/main-feature.png">
 			</div>
 			<div>
 				<h3>UX design</h3>
+				<i class="fas fa-chart-line"></i>
 				<p>Quorum sine causa fieri nihil putandum est. Videamus igitur sententias eorum, tum ad verba redeamus. Bonum incolumis acies: misera caecitas. Dat enim intervalla et relaxat. Ita fit cum gravior, tum etiam splendidior oratio. Tu autem negas fortem esse quemquam posse, qui dolorem malum putet. </p>
 				<h3>UI design</h3>
+				<i class="fas fa-cubes"></i>
 				<p>Sin laboramus, quis est, qui alienae modum statuat industriae? Nec enim, dum metuit, iustus est, et certe, si metuere destiterit, non erit; Age nunc isti doceant, vel tu potius quis enim ista melius? </p>
 				<h3>SEO</h3>
+				<i class="fas fa-chart-pie"></i>
 				<p>Nunc omni virtuti vitium contrario nomine opponitur. Non est ista, inquam, Piso, magna dissensio.</p>
 			</div>
 		</div>
@@ -46,17 +52,19 @@
 		<div id="portfolioAncre" class="ancre"></div>
 		<h2>Nos projets</h2>
 		<p>At enim sequor utilitatem. Quodsi ipsam honestatem undique pertectam atque absolutam. Esse enim, nisi eris, non potes. Sed tu istuc dixti bene Latine, parum plane</p>
-		<img src="images/portfolio/01.jpg" class="portfolio">
-		<img src="images/portfolio/02.jpg" class="portfolio">
-		<img src="images/portfolio/03.jpg" class="portfolio">
-		<img src="images/portfolio/04.jpg" class="portfolio">
-		<img src="images/portfolio/05.jpg" class="portfolio">
-		<img src="images/portfolio/06.jpg" class="portfolio">
-		<img src="images/portfolio/07.jpg" class="portfolio">
-		<img src="images/portfolio/08.jpg" class="portfolio">
+		<img src="./images/portfolio/01.jpg" class="portfolio">
+		<img src="./images/portfolio/02.jpg" class="portfolio">
+		<img src="./images/portfolio/03.jpg" class="portfolio">
+		<img src="./images/portfolio/04.jpg" class="portfolio">
+		<img src="./images/portfolio/05.jpg" class="portfolio">
+		<img src="./images/portfolio/06.jpg" class="portfolio">
+		<img src="./images/portfolio/07.jpg" class="portfolio">
+		<img src="./images/portfolio/08.jpg" class="portfolio">
 	</section>
-	<section id="contact">
+	<footer id="contact">
 		<div id="contactAncre" class="ancre"></div>
+		<div id="map"></div>
+		<div id="voile"></div>
 		<div id="contactForm">
 			<h3 id="contactTitle">Contact info</h3>
 			<p><strong>WebAgency SAS</strong><br>
@@ -70,5 +78,24 @@
 				<input type="submit" value="Send Message" id="sendBtn">
 			</form>
 		</div>
-	</section>
+	</footer>
+
+	<script>
+      function initMap() {
+      	var webagency = {lat: 48.873249, lng: 2.349772};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: webagency,
+          zoom: 15
+        });
+        var marker = new google.maps.Marker({
+        	position: webagency,
+        	map: map
+        });
+      }
+    </script>
+	<script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_F-pZySqzWpR0tOwFGtBc4zjjkxGXzWo &callback=initMap">
+    </script>
+
+</body>
 </html>

@@ -23,7 +23,7 @@ h2 + p
 	margin-left: 200px;
 }
 
-section
+section, header, footer
 {
 	margin-top: 60px;
 }
@@ -70,7 +70,7 @@ nav a
 
 nav a:hover
 {
-	border-top: 3px solid rgba(78 177 213);
+	border-top: 3px solid rgb(78 177 213);
 }
 
 /* Acceuil */
@@ -104,7 +104,7 @@ h1 span
 	padding: 6px 6px 6px 6px;
 	font-style: bold;
 	color: white;
-	background-color: rgba(78 177 213); /*couleur du point dans le logo webagency*/
+	background-color: rgb(78 177 213); /*couleur du point dans le logo webagency*/
 }
 
 .slider
@@ -128,8 +128,30 @@ h1 span
 /* Contact */
 #contact
 {
-	background-image: url('images/map.jpg'); /*test*/
+	position: relative;
+
+}
+
+#voile
+{
+	background-color: rgb(78 177 213);
+	opacity: 0.5;
+	z-index: 20;
 	height: 600px;
+	width: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 20;
+}
+#map
+{
+	height: 600px;
+	width: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 10;
 }
 
 #contactForm
@@ -141,6 +163,7 @@ h1 span
 	opacity: 0.8;
 	width: 250px;
 	padding: 2px 10px 10px 10px;
+	z-index: 30;
 }
 
 #contactTitle
@@ -152,6 +175,7 @@ h1 span
 
 form
 {
+	z-index: 40;
 	opacity: 1;
 }
 
@@ -172,5 +196,5 @@ textarea
 	padding: 6px 6px 6px 6px;
 	font-style: bold;
 	color: white;
-	background-color: rgba(78 177 213); /*couleur du point dans le logo webagency*/
+	background-color: rgb(78 177 213); /*couleur du point dans le logo webagency*/
 }
