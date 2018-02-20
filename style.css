@@ -12,15 +12,7 @@ body
 
 h2
 {
-	text-align: center;
 	text-transform: uppercase;
-}
-
-h2 + p
-{
-	text-align: center;
-	margin-right: 200px;
-	margin-left: 200px;
 }
 
 section, header, footer
@@ -34,8 +26,14 @@ section, header, footer
 	top: -100px;
 }
 
+.titre
+{
+	text-align: center;
+	width: 50%;
+	margin: auto;
+}
 /*Header et navigation*/
-nav
+.fixed
 {
 	position: fixed;
 	top: 0;
@@ -56,7 +54,7 @@ nav ul
 	list-style-type: none;
 }
 
-nav li
+.fixed li
 {
 	margin-right: 15px;
 }
@@ -112,11 +110,24 @@ h1 span
 	width: 100%;
 }
 
-/* Portfolio */
+/*Services*/
 #servicesContent
 {
 	display: flex;
 	align-items: center;
+}
+
+/* Portfolio */
+.projets li
+{
+	padding: 10px 10px 10px 10px;
+	background-color: rgb(229 229 229);
+}
+
+.projets li:hover
+{
+	color: white;
+	background-color: rgb(78 177 213);
 }
 
 .portfolio
@@ -129,7 +140,6 @@ h1 span
 #contact
 {
 	position: relative;
-
 }
 
 #voile
