@@ -23,9 +23,15 @@
 			<p>Vous avez un projet ? La WebAgency vous aide à le réaliser !</p>
 		<button id="infoBtn">Plus d'infos</button>	
 		</div>
-				<i class="fas fa-chevron-left"></i>
-				<img src="./images/slider/bg1.jpg" alt="Image slider 1" class="slider">
-				<i class="fas fa-chevron-right"></i>
+		<div class="slider">
+			<img src="./images/slider/bg1.jpg" alt="Image slider 1" class="sliderImage">
+		</div>
+		<div class="slider">
+			<img src="./images/slider/bg2.jpg" alt="Image slider 2" class="sliderImage">
+		</div>
+	  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+	  <span id="timeline"></span>
 	</header>
 	<section id="services">
 		<div id="servicesAncre" class="ancre"></div>
@@ -121,7 +127,6 @@
 	<footer id="contact">
 		<div id="contactAncre" class="ancre"></div>
 		<div id="map"></div>
-		<div id="voile"></div>
 		<div id="contactForm">
 			<h3 id="contactTitle">Contact info</h3>
 			<p><strong>WebAgency SAS</strong><br>
@@ -138,17 +143,41 @@
 	</footer>
 
 	<script>
-      function initMap() {
-      	var webagency = {lat: 48.873249, lng: 2.349772};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          center: webagency,
-          zoom: 15
-        });
-        var marker = new google.maps.Marker({
-        	position: webagency,
-        	map: map
-        });
-      }
+		/*Slider*/
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+			var timeline = document.getElementById("timeline");
+			timeline.classList.add("anime");
+			timeline.style.opacity = "1";
+		 	showSlides(slideIndex += n);	
+		}
+
+		function showSlides(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("slider");
+		  if (n > slides.length) {slideIndex = 1}
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+		      slides[i].style.display = "none";
+		  }
+		  slides[slideIndex-1].style.display = "block";
+		}
+
+		/*Google map*/
+
+	  	function initMap() {
+		  var webagency = {lat: 48.873249, lng: 2.349772};
+		  var map = new google.maps.Map(document.getElementById('map'), {
+		      center: webagency,
+		      zoom: 15
+		  });
+		  var marker = new google.maps.Marker({
+		    	position: webagency,
+		    	map: map
+		  });
+	  	}
     </script>
 	<script async defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_F-pZySqzWpR0tOwFGtBc4zjjkxGXzWo &callback=initMap">
