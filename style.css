@@ -206,6 +206,22 @@ h1 span
 	margin-top: auto;
 	margin-bottom: auto;
 	margin-right: 20px;
+	border: 1px solid silver;
+	border-radius: 50%;
+	padding: 20px 20px 20px 20px;
+	position: relative;
+}
+
+.boule
+{
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background-color: rgb(78, 177, 213);
+	margin: 2px solid white;
+	position: absolute;
+	right: -7px;
+	top: 50%;
 }
 
 /* Portfolio */
