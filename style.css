@@ -417,7 +417,7 @@ textarea
 
 /* Media queries */
 
-@media all and (max-width: 800px)
+@media all and (max-width: 800px) and (max-device-width: 800px)
 
 {
 	#sliderText
