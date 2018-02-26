@@ -19,7 +19,7 @@ body
 
 h1, h2, h3, h4
 {
-	font-family: 'robotoBold';
+	font-family: 'robotoBold', Comic Sans MS, Verdana, Arial, sans-serif;
 }
 
 h2
@@ -131,7 +131,8 @@ h1
      display: none;
 }
 
-.prev, .next {
+.prev, .next 
+{
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -153,7 +154,8 @@ h1
   padding: 10px 10px 10px 15px;
 }
 
-#timeline {
+#timeline 
+{
 	position: absolute;
 	background-color: rgb(78, 177, 213);
 	bottom: 1%;
@@ -168,7 +170,8 @@ h1
 	animation: timeliner 5s;
 }
 
-@-webkit-keyframes timeliner {
+@-webkit-keyframes timeliner 
+{
 	0%	{ 
 		width: 0;
 	}
@@ -177,7 +180,8 @@ h1
 	}
 }
 
-@keyframes timeliner {
+@keyframes timeliner 
+{
 	0%	{ 
 		width: 0;
 	}
