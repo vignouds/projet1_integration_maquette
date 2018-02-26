@@ -15,6 +15,8 @@ body
 {
 	font-family: 'robotoRegular', Comic Sans MS, Verdana, Arial, sans-serif;
 	font-size: 0.9em;
+	margin-right: 0px;
+	margin-left: 0px;
 }
 
 h1, h2, h3, h4
@@ -86,7 +88,7 @@ nav ul
 
 .fixed li
 {
-	margin-right: 15px;
+	margin-right: 10%;
 }
 
 nav a
@@ -143,22 +145,38 @@ h1
   cursor: pointer;
   position: absolute;
   top: 50%;
-  margin-top: -22px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
   color: white;
   background-color: rgba(0, 0, 0, 0.2);
 }
 
 .prev
 {
-	border-radius: 10% 50% 50% 10%;
-	padding: 10px 15px 10px 10px;
+	transform: translate(-50%, -50%);
 }
 
 .next 
 {
   right: 0;
-  border-radius: 50% 10% 10% 50%;
-  padding: 10px 10px 10px 15px;
+  transform: translate(50%, -50%);
+}
+
+.fa-chevron-left
+{
+	position: absolute;
+  	top: 50%;
+  	right: 30%;
+  	transform: translate(50%, -50%);
+}
+
+.fa-chevron-right
+{
+	position: absolute;
+  	top: 50%;
+  	left: 30%;
+  	transform: translate(-50%, -50%);
 }
 
 #timeline 
@@ -222,6 +240,14 @@ h1
 	margin: 2px solid white;
 	position: relative;
 	top: 6px;
+}
+
+.ordi
+{
+ 	width: 50%;
+ 	display: flex;
+ 	justify-content: center;
+ 	align-items: center;
 }
 
 .logoContainer
@@ -315,9 +341,9 @@ h1
 .portfolio figcaption
 {
 	position: absolute;
-	top: 40%;
+	bottom: 0%;
 	width: 100%;
-	height: 57%;
+	height: 50%;
 	color: white;
 	background-color: rgba(0, 0, 0, 0.4);
 	opacity: 0;
@@ -361,27 +387,36 @@ figcaption p
 
 .eye i
 {
-	position: relative;
-    left: 15%;
-    top: 15%;
+	position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 /* Contact */
 #contact
 {
 	height: 600px;
 	position: relative;
-	background-color: rgb(78, 177, 213);
 }
 
-#map
+#map, .voile
 {
 	height: 100%;
 	width: 100%;
 	position: absolute;
 	top: 0px;
 	left: 0px;
+}
+
+#map
+{
 	z-index: 10;
-	opacity: 0.5;
+}
+
+.voile
+{
+	background-color: rgba(78, 177, 213, 0.3);
+	z-index: 20
 }
 
 #contactForm
@@ -392,7 +427,7 @@ figcaption p
 	background-color: rgba(255, 255, 255, 0.8);
 	color: rgb(100, 104, 109);
 	max-width: 250px;
-	padding: 2px 10px 10px 10px;
+	padding: 2px 15px 15px 15px;
 	z-index: 30;
 }
 
@@ -407,7 +442,7 @@ figcaption p
 input, textarea
 {
 	margin-bottom: 10px;
-	max-width: 230px;
+	width: 100%;
 }
 
 textarea
