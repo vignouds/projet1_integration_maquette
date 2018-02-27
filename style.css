@@ -455,6 +455,14 @@ textarea
 @media all and (max-width: 800px) and (max-device-width: 800px)
 
 {
+	.fixed ul
+	{
+		justify-content: space-around;
+	}
+	.logoWebAgency
+	{
+		display: none;
+	}
 	#sliderText
 	{
 		width: 60%;
