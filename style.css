@@ -15,8 +15,9 @@ body
 {
 	font-family: 'robotoRegular', Comic Sans MS, Verdana, Arial, sans-serif;
 	font-size: 0.9em;
-	margin-right: 0px;
-	margin-left: 0px;
+	margin-right: 0;
+	margin-left: 0;
+	margin-bottom: 0;
 }
 
 h1, h2, h3, h4
@@ -387,7 +388,8 @@ figcaption p
 .eye
 {
 	position: absolute;
-	top: -30%;
+	top: 0;
+	transform: translateY(-50%);
 	right: 5%;
 	height: 30px;
 	width: 30px;
@@ -447,7 +449,7 @@ figcaption p
 .contactTitle
 {
 	text-transform: capitalize;
-	font-style: bold;
+	font-weight: bold;
 	font-size: 1.3em;
 	color: black;
 }
@@ -468,8 +470,11 @@ textarea
 /* Media queries */
 
 @media all and (max-width: 800px) and (max-device-width: 800px)
-
 {
+	.fixed
+	{
+		padding-bottom: 5px;
+	}
 	.fixed ul
 	{
 		justify-content: space-around;
@@ -481,7 +486,6 @@ textarea
 	#sliderText
 	{
 		width: 60%;
-		top: 10%;
 	}
 	h1
 	{
